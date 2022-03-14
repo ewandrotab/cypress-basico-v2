@@ -263,7 +263,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
         cy.get('#open-text-area').type(longText).should('have.value', longText)
     });
 
-    it.only('encontra o gato escondido', () => {
+    it('encontra o gato escondido', () => {
         cy.get('#cat')
           .should('not.be.visible')
           .invoke('show')
